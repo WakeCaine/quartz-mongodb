@@ -7,7 +7,7 @@ This is a MongoDB-backed job store for the [Quartz scheduler](http://quartz-sche
 Artifacts are released to [Bintray](https://bintray.com/michaelklishin/maven/).
 
 If you are using Maven, add the following repository
-definition to your `pom.xml`:
+definition to your `pom.xml`: (this dependency is not working for the 02.06.2021 as bintray shut down)
 
 ``` xml
 <repositories>
@@ -29,7 +29,7 @@ repositories {
 ```
 
 
-### The Most Recent Release
+### The Most Recent Release(this dependency is not working for the 02.06.2021 as bintray shut down)
 
 With Maven:
 
@@ -164,14 +164,14 @@ org.quartz.jobStore.mongoOptionWriteConcernTimeoutMillis=10000
 
 ## Continuous Integration
 
-[![Build Status](https://secure.travis-ci.org/michaelklishin/quartz-mongodb.png?branch=master)](http://travis-ci.org/michaelklishin/quartz-mongodb)
+[![Build Status](https://travis-ci.com/WakeCaine/quartz-mongodb.svg?branch=master)](https://travis-ci.com/WakeCaine/quartz-mongodb)
 
-CI is hosted by [Travis CI](http://travis-ci.org/)
+CI is hosted by [Travis CI](https://travis-ci.com)
 
 
 ## Copyright & License
 
-(c) Michael S. Klishin, Alex Petrov, 2011-2020.
+(c) Dariusz Bernad, 2021.
 
 [Apache Public License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
@@ -185,9 +185,4 @@ tries to be as feature complete as possible.
 
 ### Why the Fork?
 
-MuleSoft developers did not respond to attempts to submit pull
-requests for several months. As more and more functionality was added
-and implementation code refactored, I decided to completely separate
-this fork form GitHub forks network because the project is now too
-different from the original one. All changes were made with respect to
-the Apache Public License 2.0. 
+Original fork of MuleSoft developers project by [Michael Klishin](https://github.com/michaelklishin) is no longer getting updated for over a year now, so that motivated me to fork this. It is not by any means official fork that you should depend on. This project will get updates only due to my interest in the original project and for me to learn something new. All changes will be made with respect to the Apache Public License 2.0 as it was in original forked project. 
